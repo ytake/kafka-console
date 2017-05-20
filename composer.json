@@ -1,0 +1,29 @@
+{
+  "name": "ytake/kafka-console",
+  "description": "symfony console with kafka producer, consumer",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "yuuki takezawa",
+      "email": "yuuki.takezawa@comnect.jp.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ytake\\KafkaConsole\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "ext-rdkafka": "*",
+    "symfony/console": "^3.2",
+    "symfony/yaml": "^3.2",
+    "monolog/monolog": "^1.22",
+    "psr/log": "^1.0",
+    "zendframework/zend-servicemanager": "^3.3"
+  },
+  "require-dev": {
+    "kwn/php-rdkafka-stubs": "~1.0.1"
+  }
+}

@@ -1,0 +1,16 @@
+kafka:
+  topics:
+    -  topic: message-topic
+       brokers: 'localhost'
+  producer:
+    socket.blocking.max.ms: '1'
+    queue.buffering.max.ms: '1'
+    queue.buffering.max.messages: '1000'
+    client.id: testingClient
+  consumer:
+    heartbeat.interval.ms: '10000'
+    session.timeout.ms: '30000'
+    topic.metadata.refresh.interval.ms: '60000'
+    topic.metadata.refresh.sparse: 'true'
+    log.connection.close: 'false'
+    group.id: testingConsumer
