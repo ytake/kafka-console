@@ -10,5 +10,5 @@ $serviceManager->setService(
     \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/config.yaml'))
 );
 $serviceManager->configure($configure);
-$app = new \Ytake\KafkaConsole\Foundation\Application($serviceManager, __DIR__);
+$app = new \Ytake\KafkaConsole\Foundation\Application($serviceManager);
 $app->run();

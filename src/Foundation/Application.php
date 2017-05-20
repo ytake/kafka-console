@@ -31,9 +31,8 @@ final class Application extends \Symfony\Component\Console\Application
      * Application constructor.
      *
      * @param ContainerInterface|ServiceManager $container
-     * @param string                            $applicationPath
      */
-    public function __construct(ContainerInterface $container, string $applicationPath)
+    public function __construct(ContainerInterface $container)
     {
         parent::__construct(self::APPLICATION_NAME, self::APPLICATION_NAME);
         $this->container = $container;
